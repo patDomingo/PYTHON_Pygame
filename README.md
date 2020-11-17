@@ -1,3 +1,3 @@
 # PYTHON_Pygame
 
-Learning the baisics in creating games through the use of PYGAME
+Learning the basics in creating games through the use of PYGAME
