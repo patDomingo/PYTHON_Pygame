@@ -1,1 +1,1 @@
-print('hello pygame world')
+print('hello world')
