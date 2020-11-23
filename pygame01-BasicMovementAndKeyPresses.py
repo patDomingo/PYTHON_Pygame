@@ -2,8 +2,10 @@ import pygame
 
 pygame.init()
 
+#Game window size
 window = pygame.display.set_mode((500,500))
 
+#Game name
 pygame.display.set_caption("Moving Box")
 
 #box spawn point
@@ -14,6 +16,7 @@ y = 50
 width = 40
 height = 60
 
+#how fast the character moves
 velocity = 20
 
 run = True
