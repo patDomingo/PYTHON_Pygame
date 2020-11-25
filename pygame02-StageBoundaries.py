@@ -32,16 +32,16 @@ def main():
 
         keys = pygame.key.get_pressed()
 
-        if keys[pygame.K_LEFT]: #move LEFT
+        if keys[pygame.K_LEFT] or keys[pygame.K_a]: #move LEFT
             player.x -= velocity
-        if keys[pygame.K_RIGHT]: #move RIGHT 
+        if keys[pygame.K_RIGHT] or keys[pygame.K_d]: #move RIGHT 
             player.x += velocity
-        if keys[pygame.K_UP]: #move UP
+        if keys[pygame.K_UP] or keys[pygame.K_w]: #move UP
             player.y -= velocity
-        if keys[pygame.K_DOWN]: #move DOWN
+        if keys[pygame.K_DOWN] or keys[pygame.K_s]: #move DOWN
             player.y += velocity
         if keys[pygame.K_ESCAPE]: # CLOSE GAME
-            run = True
+            done_Running = True
 
         #BOUNDARIES
         #if player.x < 0: player.x = 0 #left boundary wall 
@@ -52,7 +52,7 @@ def main():
         #LOOPING BOUNDARIES
         if player.x < 0: #left boundary wall
             player.x = screenWidth - playerWidth  
-            
+
         if player.x > screenWidth - playerWidth: #right boundary wall 
             player.x = 0 
 
